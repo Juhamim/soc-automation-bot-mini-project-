@@ -1,0 +1,36 @@
+============================================================
+SOC AUTOMATION BOT - LIVE DEMO TEST
+============================================================
+
+[STEP 1] Authenticating with backend...
+  -> Auth OK! Token received.
+
+[STEP 2] Alert payload:
+{
+  "source": "SentinelOne EDR",
+  "severity": "High",
+  "event_type": "Malware Outbreak Detection",
+  "raw_data": {
+    "event_message": "Ransomware behavior detected. High entropy file modifications observed.",
+    "process_name": "unknown_encryptor.exe",
+    "file_path": "C:\\Users\\Finance\\Documents\\",
+    "source_ip": "185.220.101.14"
+  }
+}
+
+[STEP 3] Submitting alert to POST /api/v1/alert ...
+
+  -> SUCCESS! Pipeline accepted alert in 0.43s
+  -> Alert ID: UNKNOWN
+  -> Full response: {
+  "job_id": "91e83c11-b919-4462-a890-5e0862e73e0e",
+  "alert_id": "9975d4ef-f6e3-4849-999b-99289a366a01",
+  "status": "accepted",
+  "message": "Alert queued for processing."
+}
+
+[DONE] Check your dashboard at http://localhost:5173
+  1. New alert should appear via WebSocket instantly.
+  2. Wait 3-5 sec for Celery to query VirusTotal / AbuseIPDB / OTX.
+  3. Risk score will spike and trigger the Playbook.
+  4. Check Jira & Slack for automated responses.

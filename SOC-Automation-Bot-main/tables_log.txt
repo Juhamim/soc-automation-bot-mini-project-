@@ -1,0 +1,1 @@
+DB Tables: ['alembic_version', 'enrichment_results', 'alerts', 'action_logs', 'playbooks', 'users', 'incidents', 'threat_indicators']

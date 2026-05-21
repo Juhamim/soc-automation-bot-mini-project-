@@ -1,0 +1,12 @@
+name: "Slack Notify on Medium Severity"
+description: "For Medium severity alerts, send a Slack notification only."
+is_active: true
+
+trigger:
+  severity:
+    - "Medium"
+
+steps:
+  - action: "notify_slack"
+    params:
+      channel: "#security-alerts"

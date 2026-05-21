@@ -1,0 +1,7 @@
+Created alerts
+Created enrichment_results
+Created action_logs
+Created playbooks
+Created incidents
+Created threat_indicators
+Created users

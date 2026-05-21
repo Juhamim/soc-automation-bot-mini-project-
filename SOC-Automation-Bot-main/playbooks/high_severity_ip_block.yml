@@ -1,0 +1,25 @@
+name: "Block Malicious IP and Notify"
+description: "Triggered on High/Critical alerts — blocks the source IP via iptables (simulated) and sends a Slack notification."
+is_active: true
+
+trigger:
+  severity:
+    - "High"
+    - "Critical"
+  observable_type: "ip"
+
+steps:
+  - action: "block_ip"
+    params:
+      chain: "INPUT"
+      simulate: true  # Set to false when running on a real Linux firewall host
+
+  - action: "notify_slack"
+    params:
+      channel: "#security-alerts"
+
+  - action: "create_jira_ticket"
+    params:
+      labels:
+        - "soc-automation"
+        - "auto-blocked"

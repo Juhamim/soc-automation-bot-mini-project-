@@ -1,0 +1,26 @@
+{
+    "source": "SentinelOne EDR",
+    "severity": "High",
+    "event_type": "Malware Outbreak Detection",
+    "src_ip": "185.220.101.14",
+    "dest_ip": "10.0.0.20",
+    "file_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "external_id": "S1-EDR-20240303-9981",
+    "raw_data": {
+        "event_message": "Ransomware behavior detected. High entropy file modifications observed across multiple directories.",
+        "process_name": "unknown_encryptor.exe",
+        "process_id": 4892,
+        "file_path": "C:\\Users\\Finance\\Documents\\",
+        "files_modified": 238,
+        "source_ip": "185.220.101.14",
+        "dest_ip": "10.0.0.20",
+        "port": 443,
+        "protocol": "HTTPS",
+        "timestamp": "2024-03-03T18:45:00Z",
+        "geo_location": "RU",
+        "threat_name": "Ransom.WannaCry.Gen",
+        "confidence": 0.97,
+        "rule_id": "RANSOM-001",
+        "rule_description": "High entropy write operations - possible ransomware encryption activity"
+    }
+}

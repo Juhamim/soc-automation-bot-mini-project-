@@ -1,0 +1,22 @@
+{
+    "source": "Wazuh SIEM",
+    "severity": "Low",
+    "event_type": "Failed Login Attempt",
+    "src_ip": "192.168.1.105",
+    "dest_ip": "10.0.0.5",
+    "domain": "internal.corp.local",
+    "external_id": "WAZUH-2024-00341",
+    "raw_data": {
+        "event_message": "Multiple failed SSH login attempts detected from internal host.",
+        "username": "jsmith",
+        "attempt_count": 5,
+        "source_ip": "192.168.1.105",
+        "dest_ip": "10.0.0.5",
+        "port": 22,
+        "protocol": "SSH",
+        "timestamp": "2024-03-03T18:30:00Z",
+        "geo_location": "Internal Network",
+        "rule_id": "5710",
+        "rule_description": "SSH brute force - multiple failed logins"
+    }
+}

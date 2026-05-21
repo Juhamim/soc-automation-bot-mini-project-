@@ -1,0 +1,22 @@
+{
+    "source": "CrowdStrike Falcon",
+    "severity": "Critical",
+    "event_type": "Data Exfiltration",
+    "src_ip": "185.220.101.14",
+    "dest_ip": "198.51.100.80",
+    "file_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "external_id": "CS-FALCON-2026-CRIT1",
+    "raw_data": {
+        "event_message": "Massive data exfiltration to known malicious APT C2 server.",
+        "process_name": "svchost.exe",
+        "bytes_transferred": 500000000,
+        "source_ip": "10.0.0.50",
+        "destination_ip": "198.51.100.80",
+        "protocol": "TCP",
+        "port": 443,
+        "timestamp": "2026-03-04T00:00:00Z",
+        "threat_actor": "APT29",
+        "confidence": 1.0,
+        "rule_id": "EXFIL-001"
+    }
+}

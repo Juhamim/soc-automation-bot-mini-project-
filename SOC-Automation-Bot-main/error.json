@@ -1,0 +1,12 @@
+{
+  "columns": [
+    "id",
+    "indicator_type",
+    "indicator_value",
+    "risk_level",
+    "country",
+    "first_seen",
+    "last_seen",
+    "occurrences"
+  ]
+}
